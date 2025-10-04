@@ -14,7 +14,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
+import { BookOpen, Folder, LayoutGrid, Users } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
@@ -23,9 +23,15 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+
 ];
 
 const footerNavItems: NavItem[] = [
+    {
+        title: 'Users',
+        href: dashboard(),
+        icon:  Users,
+    },
     {
         title: 'Github Repo',
         href: 'https://github.com/laravel/vue-starter-kit',
